@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Demo Run]">
+  <test name="Common Verification">
+    <classes>
+      <class name="CucumberTest.ToolTip"/>
+      <class name="CucumberTest.Menu"/>
+    </classes>
+  </test> <!-- Common Verification -->
+  <test name="Common Verification(failed)">
+    <classes>
+      <class name="CucumberTest.Menu">
+        <methods>
+          <include name="menu"/>
+        </methods>
+      </class> <!-- CucumberTest.Menu -->
+    </classes>
+  </test> <!-- Common Verification(failed) -->
+</suite> <!-- Failed suite [Demo Run] -->
